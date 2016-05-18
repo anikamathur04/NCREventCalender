@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ * @author Frank Nimphius
+ * @copyright Copyright (c) 2015 Oracle. All rights reserved.
+-->
+<amx:view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amx="http://xmlns.oracle.com/adf/mf/amx"
+          xmlns:dvtm="http://xmlns.oracle.com/adf/mf/amx/dvt">
+  <amx:panelPage id="pp1" rendered="true">
+    <amx:facet name="header">
+      <amx:outputText value="Sample Preferences" id="ot1"/>
+    </amx:facet>
+      <amx:facet name="primary">
+            <amx:commandLink actionListener="#{bindings.gotoSpringboard.execute}" id="cl1" shortDesc="Navigates to Springboard">
+                    <amx:image inlineStyle="width:30px;height:30px;margin-top:-6px" source="/images/springboard.png" id="i1" shortDesc="Hamburger Icon"/>
+            </amx:commandLink>
+        </amx:facet>
+    <amx:facet name="secondary">
+      <amx:commandButton id="cb2" action="return" text="Start Demo" shortDesc="Save Preference &amp; Start Demo"/>
+    </amx:facet>
+    <amx:panelGroupLayout id="pgl1" inlineStyle="padding-left:15px; padding-right:15px; padding-bottom:15px; padding-top:15px;">
+      <amx:panelGroupLayout id="pgl2" inlineStyle="width:100%;">
+       <amx:outputText id="ot2" value="About the Sample Application Preferences" styleClass="adfmf-outputText-sectionTitle"/> 
+        <amx:spacer height="8" id="s5"/>                        
+        <amx:outputText value="1. Preferences can be edited in this view, in the maf-application.xml file at design time, or the device specific mobile application preference panel at runtime." id="cot1"/>
+        <amx:spacer id="s2" height="8"/>
+        <amx:outputText value="2. All required preferences must be provided before starting the sample application." id="ot6"/>
+        <amx:spacer height="5" id="s1"/>
+                <amx:outputText value="3. If you don't plan to test MCS device registration and if you don't need to distinguish analytic events by the device operation system, you can provide the same application key for Android and iOS." id="cot10"/>        
+        <amx:spacer height="20" id="s10"/>
+      </amx:panelGroupLayout>
+      <amx:panelLabelAndMessage id="plam1">
+        <amx:outputText value="Mobile Cloud Service Settings (Required)" id="ot3"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelFormLayout id="pfl1" labelWidth="250">
+        <amx:inputText label="Mobile Backend URL" id="it1" hintText="Mobile Backend Base URL (http://mbehost:port)"
+                       value="#{preferenceScope.application.mcs.mobileBackendURL}" inputType="url" required="true"/>
+        <amx:inputText label="Mobile Backend Id" id="it2" hintText="Mobile Backend Id"
+                       value="#{preferenceScope.application.mcs.mobileBackendId}" required="true"/>
+        <amx:inputText label="Anonymous Key" id="it5" value="#{preferenceScope.application.mcs.mbeAnonymousKey}" secret="true" required="true" hintText="MBE Anonymous Key"/>
+        <amx:inputText label="Mobile Backend Application Key (Android)" id="it3"
+                       hintText="MCS MBE Application Key (Android)"
+                       value="#{preferenceScope.application.mcs.mobileBackendApplicationKeyAndroid}" required="true"/>
+        <amx:inputText label="Mobile Backend Application Key (iOS)" id="it6" hintText="MCS MBE Application Key (iOS)"
+                       value="#{preferenceScope.application.mcs.mobileBackendApplicationKeyiOS}" required="true"/>
+        
+      </amx:panelFormLayout>
+      <amx:panelLabelAndMessage id="plam2">
+        <amx:outputText value="Push Settings (Optional, requires application restart)" id="ot4"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelFormLayout id="pfl2" labelWidth="250">
+        <amx:inputText label="(Android) GCM Sender Id" id="it4" hintText="(Android) Google Cloud Messaging Sender Id"
+                       secret="true" value="#{preferenceScope.application.push.gcmSenderId}"/>
+        <amx:inputText label="(Apple) Bundle Id" id="it7" value="#{preferenceScope.application.push.appleBundleId}"
+                       hintText="Provide the application bundle Id"/>
+        <amx:inputText label="(Google) Package Name" id="it8" value="#{preferenceScope.application.push.googleApplicationPackage}"
+                       hintText="Provide the package and Application name as in maf-application.xml" />
+        <amx:selectBooleanSwitch label="Enable Receiving Push Notifications" id="sbs2"
+                                 value="#{preferenceScope.application.push.enablePush}"
+                                 valueChangeListener="#{pageFlowScope.mcsPreferences.onEnablePushBooleanSwitch}"/>
+      </amx:panelFormLayout>
+      <amx:panelLabelAndMessage id="plam3">
+        <amx:outputText value="Logging (Optional)" id="ot5"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelFormLayout id="pfl3" labelWidth="250">
+        <amx:selectBooleanSwitch label="MAF MCS Utility Logging" id="sbs1" offLabel="Logging OFF" onLabel="Logging ON"
+                                 value="#{preferenceScope.application.logging.loggingEnabled}"/>
+      </amx:panelFormLayout>
+    </amx:panelGroupLayout>
+    <amx:commandButton text="_hiddenShow" id="_popShowId" inlineStyle="visibility: hidden;">
+      <amx:showPopupBehavior id="spb1" popupId="p1" type="action" decoration="simple" alignId="pp1"
+                             align="overlapMiddleCenter"/>
+    </amx:commandButton>
+  </amx:panelPage>
+   <amx:popup id="p1" autoDismiss="true"
+              inlineStyle="font-size:large; width:400px; border-color:#84adff; border-width:1px;" shortDesc="Alert that applicaton needs to be started"
+              rendered="true">
+    <amx:panelGroupLayout id="pgl3" layout="vertical"
+                          inlineStyle="background-color:#e9e9e9; margin-bottom:2px; margin-left:2px; margin-right:2px; margin-top:2px;">
+      <amx:outputText value="MAF receives push notification tokens from Google Cloud Messaging (GCM) or Apple Push Notification Service (APNS) during application start-up."
+                      inlineStyle="word-wrap:break-word; margin-bottom:3px; margin-left:3px; margin-right:3px; margin-top:3px;"
+                      id="ot40"/>
+    <amx:spacer id="s4" height="7"/>
+     <amx:outputText id="ot9" value="You need to restart this application after configuring the sample to receive push notifications."
+                     inlineStyle="word-wrap:break-word; margin-bottom:3px; margin-left:3px; margin-right:3px; margin-top:3px;" ></amx:outputText>
+      <amx:spacer id="s3" height="7"/>
+      <amx:outputText id="ot13" value="Note that push notification registration does not work for applications that run on the iOS Simulator or the Android Emulator."
+                     inlineStyle="word-wrap:break-word; margin-bottom:3px; margin-left:3px; margin-right:3px; margin-top:3px;" ></amx:outputText>
+      <amx:spacer id="s15" height="7"/>
+      <amx:commandButton text="Close" id="cb1" shortDesc="Close alert" inlineStyle="font-weight:bold;">
+        <amx:closePopupBehavior id="cpb1" popupId="p1" type="action"/>
+      </amx:commandButton>
+    </amx:panelGroupLayout>
+  </amx:popup>
+</amx:view>

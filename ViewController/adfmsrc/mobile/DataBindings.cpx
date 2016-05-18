@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.3.13.26" id="DataBindings"
+             SeparateXMLFiles="false" Package="mobile" ClientType="Generic">
+  <pageMap>
+    <page path="/amx/about/about.amx" usageId="mobile_aboutPageDef"/>
+    <page path="/amx/springboard/SpringBoard.amx" usageId="mobile_SpringBoardPageDef"/>
+    <page path="/amx/demo/DemoStart.amx" usageId="mobile_DemoStartPageDef"/>
+    <page path="/amx/preferences/PreferenceScreen.amx" usageId="mobile_PreferenceScreenPageDef"/>
+    <page path="/amx/analytics/Analytics.amx" usageId="mobile_AnalyticsPageDef"/>
+    <page path="/mafmcsutility/mafmcsutil-task-flow.xml#mafmcsutil-task-flow@prepareMCSAccess"
+          usageId="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_prepareMCSAccessPageDef"/>
+    <page path="/amx/storage/Storage.amx" usageId="mobile_StoragePageDef"/>
+    <page path="/amx/storage/CollectionDetails.amx" usageId="mobile_CollectionDetailsPageDef"/>
+    <page path="/amx/custom/CustomAPI.amx" usageId="mobile_CustomAPIPageDef"/>
+    <page path="/mafmcsutility/mafmcsutil-task-flow.xml#mafmcsutil-task-flow@eventAgenda"
+          usageId="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_eventAgendaPageDef"/>
+    <page path="/amx/agenda/agenda.amx" usageId="mobile_agendaPageDef"/>
+    <page path="/amx/speakers/speakers.amx"
+          usageId="mobile_speakersPageDef"/>
+    <page path="/mafmcsutility/mafmcsutil-task-flow.xml#mafmcsutil-task-flow@eventSponsors"
+          usageId="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_eventSponsorsPageDef"/>
+    <page path="/sponsors.amx" usageId="mobile_sponsorsPageDef"/>
+    <page path="/mafmcsutility/mafmcsutil-task-flow.xml#mafmcsutil-task-flow@eventSpeakers"
+          usageId="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_eventSpeakersPageDef"/>
+    <page path="/SpeakerDetails.amx" usageId="mobile_SpeakerDetailsPageDef"/>
+    <page path="/TaskFlows/Speaker-task-flow.xml#Speaker-task-flow@eventSpeakers"
+          usageId="mobile_Speaker_task_flow_Speaker_task_flow_eventSpeakersPageDef"/>
+    <page path="/mafmcsutility/mafmcsutil-task-flow.xml#mafmcsutil-task-flow@eventRegistration"
+          usageId="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_eventRegistrationPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="mobile_aboutPageDef" path="amx.about.aboutPageDef"/>
+    <page id="mobile_SpringBoardPageDef" path="amx.springboard.SpringBoardPageDef"/>
+    <page id="mobile_DemoStartPageDef" path="amx.demo.DemoStartPageDef"/>
+    <page id="mobile_PreferenceScreenPageDef" path="amx.preferences.PreferenceScreenPageDef"/>
+    <page id="mobile_AnalyticsPageDef" path="amx.analytics.AnalyticsPageDef"/>
+    <page id="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_prepareMCSAccessPageDef"
+          path="mafmcsutility.mafmcsutil_task_flow_mafmcsutil_task_flow_prepareMCSAccessPageDef"/>
+    <page id="mobile_SamplePageDef" path="com.oracle.maf.sample.mobile.pageDefs.SamplePageDef"/>
+    <page id="mobile_StoragePageDef" path="storage.StoragePageDef"/>
+    <page id="mobile_CollectionDetailsPageDef" path="amx.storage.CollectionDetailsPageDef"/>
+    <page id="mobile_CustomAPIPageDef" path="amx.custom.CustomAPIPageDef"/>
+    <page id="mobile_worklistPageDef" path="amx.worklist.worklistPageDef"/>
+    <page id="mobile_summaryObjectPageDef"
+          path="com.oracle.maf.sample.mobile.pageDefs.summaryObjectPageDef"/>
+    <page id="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_eventAgendaPageDef"
+          path="mafmcsutility.mafmcsutil_task_flow_mafmcsutil_task_flow_eventAgendaPageDef"/>
+    <page id="mobile_agendaPageDef" path="amx.agenda.agendaPageDef"/>
+    <page id="mobile_speakersPageDef" path="amx.speakers.speakersPageDef"/>
+    <page id="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_eventSponsorsPageDef"
+          path="mafmcsutility.mafmcsutil_task_flow_mafmcsutil_task_flow_eventSponsorsPageDef"/>
+    <page id="mobile_sponsorsPageDef"
+          path="com.oracle.maf.sample.mobile.pageDefs.sponsorsPageDef"/>
+    <page id="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_eventSpeakersPageDef"
+          path="mafmcsutility.mafmcsutil_task_flow_mafmcsutil_task_flow_eventSpeakersPageDef"/>
+    <page id="mobile_SpeakerDetailsPageDef" path="com.oracle.maf.sample.mobile.pageDefs.SpeakerDetailsPageDef"/>
+    <page id="mobile_Speaker_task_flow_Speaker_task_flow_eventSpeakersPageDef"
+          path="TaskFlows.Speaker_task_flow_Speaker_task_flow_eventSpeakersPageDef"/>
+    <page id="mobile_mafmcsutil_task_flow_mafmcsutil_task_flow_eventRegistrationPageDef"
+          path="mafmcsutility.mafmcsutil_task_flow_mafmcsutil_task_flow_eventRegistrationPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="MobileBackendDC1"
+        path="com.oracle.maf.sample.application.MobileBackendDC1"/>
+    <dc id="MobileBackendDC" path="com.oracle.maf.sample.application.MobileBackendDC"/>
+    <dc id="ApplicationFeatures" path="com.oracle.maf.sample.application.ApplicationFeatures"/>
+  </dataControlUsages>
+</Application>

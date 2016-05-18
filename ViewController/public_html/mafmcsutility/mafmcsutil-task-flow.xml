@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<adfc-mobile-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.0">
+    <task-flow-definition id="mafmcsutil-task-flow">
+        <default-activity>ensurePreferences</default-activity>
+        <managed-bean id="__5">
+            <managed-bean-name>mcsPreferences</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.preferences.PreferencesHelper</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__16">
+            <managed-bean-name>mcsAuthentication</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.auth.Authentication</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__38">
+            <managed-bean-name>mcsAnalytics</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.analytics.AnalyticsHelper</managed-bean-class>
+            <managed-bean-scope>view</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__43">
+            <managed-bean-name>collectonDetailsBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.storage.CollectionDetailsBacking</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__45">
+            <managed-bean-name>objectUpdateBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.storage.ObjectUpdateBacking</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__57">
+            <managed-bean-name>objectDeleteBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.storage.ObjectDeleteBacking</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__58">
+            <managed-bean-name>objectDownloadBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.storage.ObjectDownloadBacking</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__60">
+            <managed-bean-name>objectCreateBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.storage.ObjectCreateBacking</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__59">
+            <managed-bean-name>userManagementBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.usermanagement.UserManagementBacking</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__63">
+            <managed-bean-name>deviceRegistrationBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.push.DeviceRegistrationBacking</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__64">
+            <managed-bean-name>customApiBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.custom.CustomAPIBacking</managed-bean-class>
+            <managed-bean-scope>pageFlow</managed-bean-scope>
+        </managed-bean>
+        <managed-bean id="__68">
+            <managed-bean-name>WorklistAPIBacking</managed-bean-name>
+            <managed-bean-class>com.oracle.maf.sample.mobile.mbeans.custom.WorklistAPIBacking</managed-bean-class>
+            <managed-bean-scope>application</managed-bean-scope>
+        </managed-bean>
+        <view id="PreferenceScreen">
+            <page>/amx/preferences/PreferenceScreen.amx</page>
+        </view>
+        <router id="ensurePreferences">
+            <case id="__6">
+                <expression>#{pageFlowScope.mcsPreferences.isHasPreferences() == false}</expression>
+                <outcome>editPreferences</outcome>
+            </case>
+            <default-outcome>initApp</default-outcome>
+        </router>
+        <view id="DemoStart">
+            <page>/amx/demo/DemoStart.amx</page>
+        </view>
+        <view id="Login">
+            <page>/amx/login/Authentication.amx</page>
+        </view>
+        <view id="DeviceRegistration">
+            <page>/amx/push/DeviceRegistration.amx</page>
+        </view>
+        <router id="ensureAuthentication">
+            <case id="__36">
+                <expression>#{pageFlowScope.mcsAuthentication.isMbeAuthenticated() == false}</expression>
+                <outcome>login</outcome>
+            </case>
+            <case id="__37">
+                <expression>#{pageFlowScope.mcsAuthentication.isMbeAuthenticated() == true}</expression>
+                <outcome>demoStart</outcome>
+            </case>
+            <default-outcome>login</default-outcome>
+        </router>
+        <method-call id="logout">
+            <method>#{pageFlowScope.mcsAuthentication.logoutFromMBE}</method>
+            <outcome>
+                <fixed-outcome>logout</fixed-outcome>
+            </outcome>
+        </method-call>
+        <method-call id="prepareMCSAccess">
+            <method>#{bindings.prepareMCSAccess.execute}</method>
+            <outcome>
+                <fixed-outcome>ensureAuthentication</fixed-outcome>
+            </outcome>
+        </method-call>
+        <method-call id="eventAgenda">
+            <method>#{bindings.eventAgenda.execute}</method>
+            <outcome>
+                <fixed-outcome>eventAgenda</fixed-outcome>
+            </outcome>
+        </method-call>
+        <view id="agenda">
+            <page>/amx/agenda/agenda.amx</page>
+        </view>
+        <method-call id="eventSponsors">
+            <method>#{bindings.eventSponsors.execute}</method>
+            <outcome>
+                <fixed-outcome>eventSponsors</fixed-outcome>
+            </outcome>
+        </method-call>
+        <view id="sponsors">
+            <page>/sponsors.amx</page>
+        </view>
+        <view id="Register">
+            <page>/Register.amx</page>
+        </view>
+        <view id="postregister">
+            <page>/postregister.amx</page>
+        </view>
+        <method-call id="eventSpeakers">
+            <method>#{bindings.eventSpeakers.execute}</method>
+            <outcome>
+                <fixed-outcome>eventSpeakers</fixed-outcome>
+            </outcome>
+        </method-call>
+        <view id="speakers">
+            <page>/amx/speakers/speakers.amx</page>
+        </view>
+        <method-call id="eventRegistration">
+            <method>#{bindings.eventRegistration.execute}</method>
+            <outcome>
+                <fixed-outcome>eventRegistration</fixed-outcome>
+            </outcome>
+        </method-call>
+        <view id="innovationhall">
+            <page>/amx/InnovationHall/InnovationHall.html</page>
+        </view>
+        <control-flow-rule id="__1">
+            <from-activity-id>ensurePreferences</from-activity-id>
+            <control-flow-case id="__31">
+                <from-outcome>initApp</from-outcome>
+                <to-activity-id>prepareMCSAccess</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__7">
+            <from-activity-id>PreferenceScreen</from-activity-id>
+            <control-flow-case id="__8">
+                <from-outcome>return</from-outcome>
+                <to-activity-id>ensurePreferences</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__9">
+            <from-activity-id>DemoStart</from-activity-id>
+            <control-flow-case id="__18">
+                <from-outcome>deviceRegistration</from-outcome>
+                <to-activity-id>DeviceRegistration</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__2">
+                <from-outcome>agenda</from-outcome>
+                <to-activity-id>eventAgenda</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__22">
+                <from-outcome>sponsors</from-outcome>
+                <to-activity-id>eventSponsors</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__25">
+                <from-outcome>speakers</from-outcome>
+                <to-activity-id>eventSpeakers</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__12">
+                <from-outcome>eventRegister</from-outcome>
+                <to-activity-id>Register</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__30">
+                <from-outcome>innovationHall</from-outcome>
+                <to-activity-id>innovationhall</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__14">
+            <from-activity-id>Login</from-activity-id>
+            <control-flow-case id="__15">
+                <from-outcome>success</from-outcome>
+                <to-activity-id>ensureAuthentication</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__19">
+            <from-activity-id>DeviceRegistration</from-activity-id>
+            <control-flow-case id="__20">
+                <from-outcome>return</from-outcome>
+                <to-activity-id>DemoStart</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__13">
+            <from-activity-id>ensureAuthentication</from-activity-id>
+            <control-flow-case id="__27">
+                <from-outcome>login</from-outcome>
+                <to-activity-id>Login</to-activity-id>
+            </control-flow-case>
+            <control-flow-case id="__28">
+                <from-outcome>demoStart</from-outcome>
+                <to-activity-id>DemoStart</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__32">
+            <from-activity-id>*</from-activity-id>
+            <control-flow-case id="__33">
+                <from-outcome>logout</from-outcome>
+                <to-activity-id>logout</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__34">
+            <from-activity-id>logout</from-activity-id>
+            <control-flow-case id="__35">
+                <from-outcome>logout</from-outcome>
+                <to-activity-id>ensureAuthentication</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__3">
+            <from-activity-id>prepareMCSAccess</from-activity-id>
+            <control-flow-case id="__4">
+                <from-outcome>ensureAuthentication</from-outcome>
+                <to-activity-id>ensureAuthentication</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__39">
+            <from-activity-id>*</from-activity-id>
+            <control-flow-case id="__41">
+                <from-outcome>editPreferences</from-outcome>
+                <to-activity-id>PreferenceScreen</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__10">
+            <from-activity-id>eventAgenda</from-activity-id>
+            <control-flow-case id="__11">
+                <from-outcome>eventAgenda</from-outcome>
+                <to-activity-id>agenda</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__23">
+            <from-activity-id>eventSponsors</from-activity-id>
+            <control-flow-case id="__24">
+                <from-outcome>eventSponsors</from-outcome>
+                <to-activity-id>sponsors</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__46">
+            <from-activity-id>postregister</from-activity-id>
+            <control-flow-case id="__47">
+                <from-outcome>returnHome</from-outcome>
+                <to-activity-id>DemoStart</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__52">
+            <from-activity-id>eventSpeakers</from-activity-id>
+            <control-flow-case id="__53">
+                <from-outcome>eventSpeakers</from-outcome>
+                <to-activity-id>speakers</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__17">
+            <from-activity-id>Register</from-activity-id>
+            <control-flow-case id="__21">
+                <from-outcome>register</from-outcome>
+                <to-activity-id>eventRegistration</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <control-flow-rule id="__26">
+            <from-activity-id>eventRegistration</from-activity-id>
+            <control-flow-case id="__29">
+                <from-outcome>eventRegistration</from-outcome>
+                <to-activity-id>postregister</to-activity-id>
+            </control-flow-case>
+        </control-flow-rule>
+        <page-flow-scope-behavior>
+            <push-new/>
+        </page-flow-scope-behavior>
+    </task-flow-definition>
+</adfc-mobile-config>

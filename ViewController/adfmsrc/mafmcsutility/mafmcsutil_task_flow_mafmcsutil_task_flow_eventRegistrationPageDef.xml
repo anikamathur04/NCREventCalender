@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="12.1.3.2.1"
+                id="mafmcsutil_task_flow_mafmcsutil_task_flow_eventRegistrationPageDef"
+                Package="mafmcsutility" SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <methodAction id="eventRegistration" RequiresUpdateModel="true"
+                  Action="invokeMethod" MethodName="eventRegistration"
+                  IsViewObjectMethod="false" DataControl="MobileBackendDC"
+                  InstanceName="data.MobileBackendDC.dataProvider"
+                  ReturnName="data.MobileBackendDC.methodResults.eventRegistration_MobileBackendDC_dataProvider_eventRegistration_result">
+      <NamedData NDName="FName" NDValue="#{pageFlowScope.fname}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="LName" NDValue="#{pageFlowScope.lname}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="Title" NDValue="#{pageFlowScope.title}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="EmailId" NDValue="#{pageFlowScope.email}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="Company" NDValue="#{pageFlowScope.company}"
+                 NDType="java.lang.String"/>
+      <NamedData NDName="phone" NDValue="#{pageFlowScope.phone}"
+                 NDType="java.lang.String"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>
