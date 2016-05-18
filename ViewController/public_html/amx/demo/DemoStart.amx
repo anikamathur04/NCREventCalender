@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ * @author Frank Nimphius
+ * @copyright Copyright (c) 2015 Oracle. All rights reserved.
+-->
+<amx:view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amx="http://xmlns.oracle.com/adf/mf/amx"
+          xmlns:dvtm="http://xmlns.oracle.com/adf/mf/amx/dvt">
+    <amx:panelPage id="pp1">
+        <amx:facet name="header">
+            <amx:outputText value="Home" id="ot1"/>
+        </amx:facet>
+        <amx:facet name="primary">
+            <amx:commandLink actionListener="#{bindings.gotoSpringboard.execute}" id="cl1"
+                             shortDesc="Navigates to Springboard"
+                             rendered="false">
+                <amx:image inlineStyle="width:30px;height:30px;margin-top:-6px" source="/images/springboard.png" id="i1"
+                           shortDesc="Hamburger Icon"/>
+            </amx:commandLink>
+        </amx:facet>
+        <amx:facet name="secondary">
+            <amx:commandLink text="Logout" id="cl2" action="logout" shortDesc="Logout from the MBE session">
+                <amx:setPropertyListener id="spl2" from='#{""}' to="#{applicationScope.dataControlError}"
+                                         type="action"/>
+                <amx:setPropertyListener id="spl3" from='#{""}' to="#{applicationScope.dataControlInfo}" type="action"/>
+            </amx:commandLink>
+        </amx:facet>
+        <amx:panelStretchLayout id="psl1">
+            <amx:facet name="top">
+                <amx:panelGroupLayout id="pgl1" inlineStyle="width:100%" halign="center" layout="vertical">
+                    <amx:panelGroupLayout id="pgl500" halign="end" layout="horizontal"
+                                          inlineStyle="background-color:#e7e7e7; width:100%;">
+                        <amx:panelLabelAndMessage id="plam200" inlineStyle="width:600px;">
+                            <amx:outputText value="Welcome, #{applicationScope.mafmcsutilauthenticateduser}" id="ot400"
+                                            inlineStyle="color:#004a73; width:200px; text-align:right"/>
+                        </amx:panelLabelAndMessage>
+                    </amx:panelGroupLayout>
+                </amx:panelGroupLayout>
+                <amx:image id="i11" source="/images/header.png" inlineStyle="alignment-adjust:central;width:100%"/>
+            
+            </amx:facet>
+            <amx:facet name="center">
+                <amx:tableLayout id="tl1"
+                                  cellPadding="10"
+                                 width="100%" >
+                    <amx:rowLayout id="rl11" >
+                        <amx:cellFormat id="cf1"
+                                         width="50%"
+                                        halign="center">
+                            <amx:listView var="row" showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv1">
+                                <amx:listItem id="li1" >                                  
+                                    <amx:image id="i2" source="/images/home.png"/>
+                                </amx:listItem>
+                            </amx:listView>
+                        </amx:cellFormat>
+                        <amx:cellFormat id="cf2"  width="50%"
+                                        halign="center">
+                            <amx:listView var="row" showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv2">
+                                <amx:listItem id="li2" action="agenda">
+                                    <amx:image id="i3" source="/images/agenda.png"/>
+                                </amx:listItem>
+                            </amx:listView>
+                        </amx:cellFormat>
+                    </amx:rowLayout>
+                    <amx:rowLayout id="rl2">
+                        <amx:cellFormat id="cf3" halign="center">
+                            <amx:listView var="row" showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv3">
+                                <amx:listItem id="li3" action="speakers">
+                                    <amx:image id="i4" source="/images/speakers.png"/>
+                                </amx:listItem>
+                            </amx:listView>
+                        </amx:cellFormat>
+                        <amx:cellFormat id="cf4" halign="center">
+                            <amx:listView var="row" showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv4">
+                                <amx:listItem id="li4" action="innovationHall">
+                                    <amx:image id="i5" source="/images/inovation_hall.png"/>
+                                </amx:listItem>
+                            </amx:listView>
+                        </amx:cellFormat>
+                    </amx:rowLayout>
+                    <amx:rowLayout id="rl3">
+                        <amx:cellFormat id="cf5" halign="center">
+                            <amx:listView var="row" showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv5">
+                                <amx:listItem id="li5" action="sponsors">
+                                    <amx:image id="i6" source="/images/sponsors.png"/>
+                                </amx:listItem>
+                            </amx:listView>
+                        </amx:cellFormat>
+                        <amx:cellFormat id="cf6" halign="center">
+                            <amx:listView var="row" showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv6">
+                                <amx:listItem id="li6">
+                                    <amx:image id="i7" source="/images/contact_us.png"/>
+                                </amx:listItem>
+                            </amx:listView>
+                        </amx:cellFormat>
+                    </amx:rowLayout>
+                    <amx:rowLayout id="rl4">
+                        <amx:cellFormat id="cf51" halign="center" columnSpan="2">
+                            <amx:commandButton text="Register" id="cb1" action="eventRegister"
+                                               inlineStyle="width:100%; background-color:Highlight; color:White; font-weight:bold; line-height:25px; border-style:solid; border-color:#b5b5b5; border-width:1px;"/>
+                        </amx:cellFormat>
+                    </amx:rowLayout>
+                </amx:tableLayout>
+            </amx:facet>
+        </amx:panelStretchLayout>
+    </amx:panelPage>
+</amx:view>

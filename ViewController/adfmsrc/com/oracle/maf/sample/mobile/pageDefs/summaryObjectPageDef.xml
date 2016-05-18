@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="12.1.3.2.1" id="summaryObjectPageDef"
+                Package="com.oracle.maf.sample.mobile.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="MobileBackendDC"
+              id="MobileBackendDCIterator"/>
+    <accessorIterator MasterBinding="MobileBackendDCIterator"
+                      Binds="summaryObject" RangeSize="25"
+                      DataControl="MobileBackendDC"
+                      BeanClass="com.oracle.maf.sample.application.pojo.SummaryObject"
+                      id="summaryObjectIterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="summaryObjectIterator"
+                     id="notificationId">
+      <AttrNames>
+        <Item Value="notificationId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="summaryObjectIterator" id="fromUser">
+      <AttrNames>
+        <Item Value="fromUser"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="summaryObjectIterator" id="subject">
+      <AttrNames>
+        <Item Value="subject"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="summaryObjectIterator" id="beginDate">
+      <AttrNames>
+        <Item Value="beginDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="summaryObjectIterator" id="dueDate">
+      <AttrNames>
+        <Item Value="dueDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="summaryObjectIterator" id="endDate">
+      <AttrNames>
+        <Item Value="endDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="summaryObjectIterator" id="type">
+      <AttrNames>
+        <Item Value="type"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="summaryObjectIterator" id="toUser">
+      <AttrNames>
+        <Item Value="toUser"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

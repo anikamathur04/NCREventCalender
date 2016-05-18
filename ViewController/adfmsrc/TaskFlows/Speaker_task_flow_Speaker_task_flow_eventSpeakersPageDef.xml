@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1"
+                id="Speaker_task_flow_Speaker_task_flow_eventSpeakersPageDef" Package="TaskFlows" SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <methodAction id="eventSpeakers" RequiresUpdateModel="true" Action="invokeMethod" MethodName="eventSpeakers"
+                  IsViewObjectMethod="false" DataControl="MobileBackendDC"
+                  InstanceName="data.MobileBackendDC.dataProvider"
+                  ReturnName="data.MobileBackendDC.methodResults.eventSpeakers_MobileBackendDC_dataProvider_eventSpeakers_result"/>
+  </bindings>
+</pageDefinition>

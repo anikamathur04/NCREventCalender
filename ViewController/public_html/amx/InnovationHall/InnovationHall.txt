@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII"/>
+        <title>InnovationHall</title>
+    </head>
+    <body>
+        <div id="sc10856" class="sc-view hidden-border inline-styled-view editor-outline"
+             style="left: 10px; top: 442px;color: #000000; font-family: Arial; font-size: 12px; line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+            <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                       style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                    <tbody>
+                        <tr>
+                            <td valign="top" class="valign-able">
+                                <span class="remove-absolute">
+                                    <span style="color:rgb(85, 85, 85);">
+                                        <span style="font-size:10.0pt;font-family:Arial;">
+                                            We will showcase our latest solutions that enable financial institutions
+                                            around the world to combine all their channels in the most effective, and
+                                            efficient way, while ensuring that they provide their customers with a
+                                            personalized and interactive experience that engages them in more relevant
+                                            and convenient ways.
+                                            <br/>
+                                            <br/>
+                                            <span style="color:rgb(83, 185, 72);">
+                                                <b></b></span>
+                                        </span></span></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <ul>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/kalpana-enterprise-driven-atm-software?elqaid=1581&amp;elqat=2&amp;elqTrackId=bd896ea0dce748efa6902305a25da98a">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>Kalpana - Enterprise Driven Software</b></span></a>
+                                                </span>
+                                                <br/>
+                                                <a href="http://www.ncr.com/financial-services/kalpana-enterprise-driven-atm-software?elqaid=1581&amp;elqat=2&amp;elqTrackId=5a61d676538d4cb9bfe413896402c474">
+                                                    <span style="color:rgb(83, 185, 72);">NCR Kalpana</span></a>
+                                                software is a cornerstone of our CxBanking strategy, which focuses on
+                                                seamless integration for more efficiency, growth and security for you &mdash;
+                                                and more personalized experiences for your customers.
+                                            </span></span></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/cash-dispenser-atms/selfserv-22e?elqaid=1581&amp;elqat=2&amp;elqTrackId=0a310d93e8524d8e8c1605b5ac1ba316">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>Cash Dispenser ATMs</b></span></a>
+                                                </span>
+                                                <br/>
+                                                At NCR, we&rsquo;re proud to be the world&rsquo;s #1 provider of ATMs,
+                                                with 790,000 installed globally. You can find our ATMs everywhere, from
+                                                the nearest bank branch, on board ships, in remote villages and even in
+                                                the Swiss Alps or South Antarctic. With 13,000 technicians in 180
+                                                countries, we&rsquo;re also ready to service these ATMs too.
+                                                </span></span></span><ul>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/cash-dispenser-atms/cx110-thin-client-atm?elqaid=1581&amp;elqat=2&amp;elqTrackId=1eeba8e1e2d74eab83ca298fc6db3f18">
+                                                            <span style="color:rgb(83, 185, 72);">Cx110</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/cash-dispenser-atms/selfserv-22e?elqaid=1581&amp;elqat=2&amp;elqTrackId=56df47b5f94f4e768778dbb31b22559d">
+                                                            <span style="color:rgb(83, 185, 72);">SS22e</span></a>
+                                                    </li>
+                                                </ul>
+                                            
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/branch-transformation?elqaid=1581&amp;elqat=2&amp;elqTrackId=7f06ce0350f94541ab55a3c4b0ca7e23">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>Branch Transformation</b></span></a>
+                                                </span>
+                                                <br/>
+                                                We understand that the branch is evolving and that you are focused on
+                                                providing the best solutions for your customer&rsquo;s needs. NCR
+                                                presents you with the latest technology to achieve the right strategic
+                                                mix of personal, assisted and self-service channels.
+                                                 </span></span></span><ul>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/branch-transformation/ncr-interactive-services/aptra-interactive-teller?elqaid=1581&amp;elqat=2&amp;elqTrackId=0f3580b646714c9f8b7ec34940b37cac">
+                                                            <span style="color:rgb(83, 185, 72);">Interactive Teller</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/branch-transformation/ncr-interactive-services/interactive-banker?elqaid=1581&amp;elqat=2&amp;elqTrackId=d00aeec76dd84977b14e6e24977c2bc4">
+                                                            <span style="color:rgb(83, 185, 72);">Interactive Banker</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/branch-transformation/financial-kiosk?elqaid=1581&amp;elqat=2&amp;elqTrackId=77d11c3306834383b8de06ccf2e95141">
+                                                            <span style="color:rgb(83, 185, 72);">Financial Kiosk
+                                                                                                  SelfServ4</span></a>
+                                                    </li>
+                                                </ul>
+                                           
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/ncr-secure?elqaid=1581&amp;elqat=2&amp;elqTrackId=8ebf48386a9b457d9a9cf34ec6a2d75c">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>NCR Secure
+                                                                <sup>&trade;</sup></b></span></a>
+                                                </span>
+                                                <br/>
+                                                You know attacks on ATMs and banking infrastructure continue to occur,
+                                                and Financial institutions continue to face increased costs and pressure
+                                                to remain complaint with government and industry mandates and
+                                                regulations while costs from losses continue to rise. NCR can help you
+                                                protect your investment, your brand, and your customers with NCR Secure
+                                                <sup>&trade;</sup>
+                                                .</span></span></span>
+                                                <ul>
+                                                    <li>Remote BIOS</li>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/ncr-secure/solutions/logical-attacks">
+                                                            <span style="color:rgb(83, 185, 72);">Solidcore Suite for
+                                                                                                  APTRA</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/ncr-secure/solutions/card-skimming">
+                                                            <span style="color:rgb(83, 185, 72);">SPS</span></a>
+                                                    </li>
+                                                    <li>Windows Password</li>
+                                                </ul>
+                                            
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/marketing-solutions?elqaid=1581&amp;elqat=2&amp;elqTrackId=8ce99bd024fa410bb4490ac9c695a532">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>Marketing Solutions</b></span></a>
+                                                </span>
+                                                <br/>
+                                                With 59 billion transactions taking place every year, the ATM channel is
+                                                the perfect way to communicate marketing needs with your customers
+                                                within their chosen channel. Whether you want to do broad based
+                                                advertising or run targeted marketing campaigns on your self-service
+                                                channel, our software solutions can help.
+                                               </span></span></span> <ul>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/marketing-solutions/aptra-emarketing-financial?elqaid=1581&amp;elqat=2&amp;elqTrackId=136a95c247e441119b250c88a2e4e727">
+                                                            <span style="color:rgb(83, 185, 72);">APTRA eMarketing for
+                                                                                                  Financial</span></a>
+                                                    </li>
+                                                </ul>
+                                            
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/enterprise-management?elqaid=1581&amp;elqat=2&amp;elqTrackId=7de4eea34fc04155a0795a0022fbe952">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>Enterprise Awareness</b></span></a>
+                                                </span>
+                                                <br/>
+                                                With today&rsquo;s banking environment depending more than ever on
+                                                convenience and trust, there is no room for compromise when it comes to
+                                                securing your self-service channel. The self-service industry needs a
+                                                new, tailored approach to enterprise management that addresses all
+                                                potential threats (known or unknown) and also protects against the
+                                                growing problem of non-compliance.
+                                              </span></span></span>   <ul>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/enterprise-management/aptra-vision?elqaid=1581&amp;elqat=2&amp;elqTrackId=f3bad6dce7094257888f1de70000ca6c">
+                                                            <span style="color:rgb(83, 185, 72);">APTRA Vision</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/enterprise-management/inetco-insight?elqaid=1581&amp;elqat=2&amp;elqTrackId=b229b3d95b5e4437bf5e712f20667e5b">
+                                                            <span style="color:rgb(83, 185, 72);">INETCO Insight</span></a>
+                                                    </li>
+                                                </ul>
+                                           
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/cash-management-solutions?elqaid=1581&amp;elqat=2&amp;elqTrackId=fbb5fa76cfb54d6cbaa882bd8933f816">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>Cash Management Solutions</b></span></a>
+                                                </span>
+                                                <br/>
+                                                NCR
+                                                <b>APTRA Cash Management Solutions</b>
+                                                enable banks to achieve the right balance of cash in branches and
+                                                throughout a bank&rsquo;s ATM network to meet customer demand while
+                                                avoiding holding excess of cash that could be invested elsewhere.
+                                               </span></span></span>    <ul>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/cash-management-solutions/aptra-opticash?elqaid=1581&amp;elqat=2&amp;elqTrackId=c7eeb1502bb2486db3d34d5cbd18e3cb">
+                                                            <span style="color:rgb(83, 185, 72);">Opticash</span></a>
+                                                    </li>
+                                                </ul>
+                                         
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/deposit-atms?elqaid=1581&amp;elqat=2&amp;elqTrackId=3e79a53eebe943f6993c3a30fe7c689c">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>Deposit ATMs</b></span></a>
+                                                </span>
+                                                <br/>
+                                                Both cash and check deposits, together with payment transactions, now
+                                                represents the bulk of activity that continues to be carried out at a
+                                                branch counter. NCR multi-function and intelligent deposit ATMs help
+                                                migrate quick exchanges to your ATMs and free up your bank tellers to
+                                                provide superior customer service and engage new clients.
+                                                </span></span></span>  <ul>
+                                                    <li>
+                                                        <a href="http://www.ncr.com/financial-services/deposit-atms/selfserv-32?elqaid=1581&amp;elqat=2&amp;elqTrackId=3e87d06594984f59849032aabcda97e3">
+                                                            <span style="color:rgb(83, 185, 72);">SS32</span></a>
+                                                    </li>
+                                                </ul>
+                                          
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <span style="color:rgb(83, 185, 72);">
+                                                        <b>Voice Guidance Solution</b></span>
+                                                </span>
+                                                <br/>
+                                                NCR Voice Guidance Solution is designed to help visually challenged
+                                                person to transact at the ATM. This solution has audio orientation guide
+                                                for the first time user. While transacting at the ATM, customer can
+                                                blank out screen display for better security. Whole transaction gets
+                                                completed by use of PINPAD (EPP) only without need of navigating through
+                                                complex touch or FDK button options. This solution is designed to meet
+                                                IBA guideline and NCR was the pioneer in developing and deploying it for
+                                                many banks in India
+                                            </span></span></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+           <li id="sc10942" class="sc-view hidden-border inline-styled-view editor-outline"
+                style="left: 162px;top: 556px; color: #000000; font-family: Arial;  line-height: 11.0pt; letter-spacing: 0px; word-wrap: break-word; overflow: hidden">
+                <div class="co-border-style" style="border-width: 2px; border-style: none; border-color: #000">
+                    <table cellspacing="0" cellpadding="0"  bordercollapse="collapse" class="co-style-table"
+                           style='font-size:10.0pt;font-family:"Arial";color:#555555;'>
+                        <tbody>
+                            <tr>
+                                <td valign="top" class="valign-able">
+                                    <span class="remove-absolute">
+                                        <span style="color:rgb(85, 85, 85);">
+                                            <span style="font-size:10.0pt;font-family:Arial;">
+                                                <span style="font-size:11.0pt;">
+                                                    <a href="http://www.ncr.com/financial-services/printer-solutions-banks?elqaid=1581&amp;elqat=2&amp;elqTrackId=d46d99e9b50644f2a9303b0423080805">
+                                                        <span style="color:rgb(83, 185, 72);">
+                                                            <b>Interactive Printer Solutions</b></span></a>
+                                                </span>
+                                                <br/>
+                                                As consumers, we all tend to expect that ATMs will work perfectly. But
+                                                when things go awry? Well, that adds up to the kind of customer
+                                                frustration that can potentially cause your bank to lose
+                                                revenues&mdash;and loyalty. Because the whole experience is about trust.
+                                                <br/>
+                                                <br/>
+                                                A simple switch to NCR printer supplies can improve ATM uptime so
+                                                customers can get a receipt when they need it. NCR offers the highest
+                                                quality paper, inking ribbons, item processing supplies, cleaning
+                                                products, laser cartridges and more.
+                                                </span></span></span> <ul>
+                                                    <li>Interactive Printer Solutions</li>
+                                                </ul>
+                                           
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>
